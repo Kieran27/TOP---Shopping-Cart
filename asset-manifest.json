@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.css": "/TOP---Shopping-Cart/static/css/main.39654e40.css",
+    "main.js": "/TOP---Shopping-Cart/static/js/main.0fa1bd6e.js",
+    "static/media/dichatz-img.jpg": "/TOP---Shopping-Cart/static/media/dichatz-img.1f5811988e1f32ca5774.jpg",
+    "static/media/sergey-mikheev-img.jpg": "/TOP---Shopping-Cart/static/media/sergey-mikheev-img.a1ae40adceb192ffdd05.jpg",
+    "static/media/david-jones-img.jpg": "/TOP---Shopping-Cart/static/media/david-jones-img.ed0c8d0217d98f0268d2.jpg",
+    "static/media/background-image.png": "/TOP---Shopping-Cart/static/media/background-image.b13fc72ed329fc9843a1.png",
+    "static/media/milada-vigerova-img.jpg": "/TOP---Shopping-Cart/static/media/milada-vigerova-img.04d0ac41382fa642600e.jpg",
+    "static/media/bike-seat-lineup.jpg": "/TOP---Shopping-Cart/static/media/bike-seat-lineup.ced15dff61f2ee56afec.jpg",
+    "index.html": "/TOP---Shopping-Cart/index.html",
+    "main.39654e40.css.map": "/TOP---Shopping-Cart/static/css/main.39654e40.css.map",
+    "main.0fa1bd6e.js.map": "/TOP---Shopping-Cart/static/js/main.0fa1bd6e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.39654e40.css",
+    "static/js/main.0fa1bd6e.js"
+  ]
+}
