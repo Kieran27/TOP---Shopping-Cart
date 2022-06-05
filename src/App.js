@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { BrowserRouter, HashRouter, Routes, Route } from "react-router-dom";
 import { useState, useEffect } from 'react'
 import Header from './components/Header.js'
 import Footer from './components/Footer.js'
@@ -10,7 +10,7 @@ import Cart from './components/Cart.js'
 import ProductPage from './components/Product-Page.js'
 import Sidebar from './components/Sidebar.js'
 import SignUpModal from './components/sign-up-modal.js'
-import QuantitySelector from './components/Utility-Components/quantity-selector.js'
+
 
 const App = () => {
   let [cartArray, setCartArray] = useState([])
@@ -29,17 +29,22 @@ const App = () => {
   }
 
   const sameItem = (obj, qty) => {
+    // Search if item id exists
     if (cartArray.some((item) => item.id === obj.id)) {
+      // Set qty and total price props
       obj.quantity = parseInt(qty)
       obj.totalPrice = obj.quantity * obj.price
+      // Find index of same item in cart array
       const itemIndex = cartArray.findIndex(item => item.id === obj.id)
-      console.log(itemIndex)
+      // update existing item for potential new qty/total price
       updateCartItem(obj, itemIndex)
+      // return true for ternary check
       return true
     }
     return false
   }
 
+  // Copy arr, splice element at index and replace with new obj
   const updateCartItem = (obj, index) => {
     const arrCopy = [...cartArray]
     arrCopy.splice(index, 1, obj)
@@ -61,6 +66,7 @@ const App = () => {
     qtySetToZero(index)
   }
 
+  // Deletes cart item if qty set by user to zero
   const qtySetToZero = (index) => {
     if (cartArray[index].quantity === 0) {
       return deleteCartItem(index)
@@ -77,23 +83,24 @@ const App = () => {
     navIsOpen ? setNavIsOpen(false) : setNavIsOpen(true)
   }
 
+  // Recalculate totalPrice of all cart items on component update/mount
   useEffect(() => {
     setTotal(cartArray.map(item => item.totalPrice).reduce((acc, itemPrice) => {
       return acc + itemPrice
     }, 0))
-    console.log(cartArray)
   },[cartArray])
 
+  // Disable vertical scroll when nav is open by toggling class on body
   useEffect(() => {
     document.querySelector('body').classList.toggle('scroll-disable')
   }, [navIsOpen])
 
-
+  // Hash router for github-pages compatibility for SPA
   return (
-    <BrowserRouter>
+    <HashRouter>
       <AnnouncementBar />
       <Header cartArray={cartArray} toggleNav={toggleNav} />
-      {navIsOpen && <Sidebar toggleNav={toggleNav} />}
+      <Sidebar toggleNav={toggleNav} navStatus={navIsOpen} />
         <main >
         <Routes>
           <Route path="/" element={<LandingPage />} />
@@ -105,7 +112,7 @@ const App = () => {
         </main>
       <Footer />
     {/*<SignUpModal />*/}
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

@@ -229,6 +229,63 @@ input[type=number]::-webkit-inner-spin-button {
   color: #818181;
 }
 
+.footer-info {
+  letter-spacing: 0;
+  opacity: 0.85;
+}
+
+.github-item {
+  margin-left: 0.1rem;
+}
+
+.github-item a {
+  display: flex;
+  align-items: center;
+}
+
+.sidenav {
+  height: 100%;
+  width: 300px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: -100%;
+  background-color: white;
+  padding-top: 60px;
+  transition: 0.5s;
+  margin-top: 123px;
+  border-right: 1px solid #d4d4d4;
+}
+
+.active-nav {
+  left: 0;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav button {
+  background: none;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: 0;
+  color: #333333;
+  padding: 1rem;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+.scroll-disable {
+  overflow-y: hidden;
+}
+
 .container-header {
   margin-left: 3rem;
 }
@@ -266,7 +323,7 @@ input[type=number]::-webkit-inner-spin-button {
 }
 
 .mission-statement-container {
-  padding: 2rem;
+  padding: 4rem 2rem;
   margin: 0 auto;
   max-width: 1000px;
   text-align: center;
@@ -304,6 +361,7 @@ input[type=number]::-webkit-inner-spin-button {
   flex-wrap: wrap;
   justify-content: center;
   padding: 1rem;
+  margin-bottom: 3rem;
   gap: 1rem;
 }
 
@@ -746,6 +804,13 @@ input[type=number]::-webkit-inner-spin-button {
   font-size: 0.75rem;
   letter-spacing: 1.3px;
   cursor: pointer;
+  transition: background 0.2s;
+}
+
+.btn-add-to-cart:hover {
+  border: 1px solid black;
+  color: black;
+  background: white;
 }
 
 .quantity-container {
@@ -885,43 +950,4 @@ input[type=number]::-webkit-inner-spin-button {
   .landing-banner {
     height: 420px;
   }
-}
-
-.sidenav {
-  height: 100%;
-  width: 300px;
-  position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: white;
-  padding-top: 60px;
-  transition: 0.5s;
-  margin-top: 125px;
-  border-right: 1px solid #333333;
-}
-
-.sidenav a {
-  padding: 8px 8px 8px 32px;
-  text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
-}
-
-.sidenav button {
-  background: none;
-  border: none;
-  position: absolute;
-  right: 0;
-  top: 0;
-  color: #333333;
-  padding: 1rem;
-  font-size: 2rem;
-  cursor: pointer;
-}
-
-.scroll-disable {
-  overflow-y: hidden;
 }

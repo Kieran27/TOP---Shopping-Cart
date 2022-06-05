@@ -2,10 +2,10 @@ import React from 'react'
 import { NavLink } from 'react-router-dom'
 import { TiTimes } from 'react-icons/ti'
 
-const Sidebar = ({toggleNav}) => {
+const Sidebar = ({toggleNav, navStatus}) => {
   return (
-    <div className="sidenav">
-      <button onClick={() => toggleNav()} ><TiTimes /></button>
+    <div className={navStatus ? "sidenav active-nav" : "sidenav"}>
+      {/*<button onClick={() => toggleNav()} ><TiTimes /></button>*/}
       <NavLink to="/" onClick={() => toggleNav()}>
         Home
       </NavLink>

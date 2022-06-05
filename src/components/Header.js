@@ -4,7 +4,6 @@ import { TiShoppingCart, TiThMenu } from "react-icons/ti"
 import '../index.css'
 
 const Header = ({cartArray, toggleNav}) => {
-  console.log(cartArray)
   return (
     <header className="header">
       <div className="hamburger-menu-container" onClick={() => toggleNav()}><TiThMenu /></div>

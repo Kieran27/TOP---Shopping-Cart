@@ -1,6 +1,7 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
 import { TiArrowRight } from 'react-icons/ti'
+import { AiFillGithub } from 'react-icons/ai'
 import '../index.css'
 
 const Footer = () => {
@@ -35,27 +36,27 @@ const Footer = () => {
           <h3>Contact Us</h3>
           <ul>
             <li>
-              email: Loremipsum@dolorsit.com
+              email: <span className='footer-info'>Loremipsum@dolorsit.com</span>
             </li>
             <li>
-              phone: + xxx xxx xxx
+              phone: <span className='footer-info'>+ xxx xxx xxx</span>
             </li>
             <li>
-              address: ????
+              address: <span className='footer-info'>?? ??? ????</span>
             </li>
           </ul>
         </div>
         <div className="footer-item-container">
           <h3>Author</h3>
           <ul>
-            <li>
+            <li className='github-item'>
               Kieran Singh
             </li>
-            <li>
-              Github: <a href="#"></a>
-            </li>
-            <li>
-              Github: <a href="#"></a>
+            <li className='github-item'>
+              <a
+                href="https://github.com/Kieran27">
+                <AiFillGithub className='github-item' style={{fontSize: '2rem'}}/>
+              </a>
             </li>
           </ul>
         </div>
