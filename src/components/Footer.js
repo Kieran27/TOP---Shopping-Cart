@@ -16,7 +16,7 @@ const Footer = () => {
   }
 
   return (
-    <div className="footer-container-full">
+    <footer className="footer-container-full">
       <footer className="footer-container">
         <div className="footer-item-container">
           <h3>Quick Links</h3>
@@ -70,7 +70,7 @@ const Footer = () => {
           </form>
         </div>
       </footer>
-    </div>
+    </footer>
   )
 }
 
