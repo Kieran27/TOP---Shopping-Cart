@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/TOP---Shopping-Cart/static/css/main.9030a7d0.css",
-    "main.js": "/TOP---Shopping-Cart/static/js/main.a3c43e43.js",
+    "main.js": "/TOP---Shopping-Cart/static/js/main.c178faff.js",
     "static/media/dichatz-img.jpg": "/TOP---Shopping-Cart/static/media/dichatz-img.1f5811988e1f32ca5774.jpg",
     "static/media/sergey-mikheev-img.jpg": "/TOP---Shopping-Cart/static/media/sergey-mikheev-img.a1ae40adceb192ffdd05.jpg",
     "static/media/david-jones-img.jpg": "/TOP---Shopping-Cart/static/media/david-jones-img.ed0c8d0217d98f0268d2.jpg",
@@ -10,10 +10,10 @@
     "static/media/bike-seat-lineup.jpg": "/TOP---Shopping-Cart/static/media/bike-seat-lineup.ced15dff61f2ee56afec.jpg",
     "index.html": "/TOP---Shopping-Cart/index.html",
     "main.9030a7d0.css.map": "/TOP---Shopping-Cart/static/css/main.9030a7d0.css.map",
-    "main.a3c43e43.js.map": "/TOP---Shopping-Cart/static/js/main.a3c43e43.js.map"
+    "main.c178faff.js.map": "/TOP---Shopping-Cart/static/js/main.c178faff.js.map"
   },
   "entrypoints": [
     "static/css/main.9030a7d0.css",
-    "static/js/main.a3c43e43.js"
+    "static/js/main.c178faff.js"
   ]
 }
